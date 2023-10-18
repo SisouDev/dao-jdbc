@@ -1,6 +1,5 @@
 package models.dao.impl;
 
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -77,7 +76,7 @@ public class SellerDaoJDBC implements SellerDao {
             preparedStatement.setInt(6, seller.getId());
 
             preparedStatement.executeUpdate();
-            
+
         }catch(SQLException e){
             throw new DbException(e.getMessage());
         }finally{
@@ -87,6 +86,21 @@ public class SellerDaoJDBC implements SellerDao {
 
     @Override
     public void deleteById(Integer id) {
+        PreparedStatement preparedStatement = null;
+
+        try{
+            preparedStatement = connection.prepareStatement(
+                "DELETE FROM seller WHERE Id = ?"
+            );
+
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+
+        }catch(SQLException e){
+            throw new DbException(e.getMessage());
+        }finally{
+            DB.closeStatement(preparedStatement);
+        }
         
     }
 
