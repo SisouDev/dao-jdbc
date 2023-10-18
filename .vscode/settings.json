@@ -1,0 +1,28 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "src\\application\\*",
+        "src\\application\\controllers\\*",
+        "src\\application\\models\\*",
+        "src\\application\\views\\*",
+        "src\\application\\services\\*",
+        "src\\application\\utils\\*",
+        "src\\test\\*",
+        "src\\resources\\*",
+        "src\\persistence\\entities\\*",
+        "src\\security\\*",
+        "src\\api\\controllers\\*",
+        "src\\business\\services\\*",
+        "src\\util\\*",
+        "src\\exceptions\\*",
+        "src\\ui\\*",
+        "src\\database\\*"
+        
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "lib/mysql-connector-j-8.1.0.jar",
+    ]
+}
+
