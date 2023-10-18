@@ -1,18 +1,27 @@
-## Getting Started
+<h1>README - Sales System Project</h1>
+This is a Java demonstration project that uses JDBC to interact with a database. The goal of this project is to showcase how you can create a basic sales management system in Java, including departments and related functionalities.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<h3>Requirements</h3>
+Before getting started, make sure you have the following installed in your development environment:
 
-## Folder Structure
+<h3>Java Development Kit (JDK)</h3>
+<li>A Java IDE (e.g., Eclipse, IntelliJ, NetBeans, VSCODE)</li>
+<li>MySQL or another compatible database</li>
+<li>MySQL Connector/J (JDBC driver for MySQL)</li>
 
-The workspace contains two folders by default, where:
+<h3>Project Setup</h3>
+<li>Clone or download this repository to your development environment.</li>
+<li>Open the project in your Java IDE.</li>
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<h3>Running the Project</h3>
+Run the Main.java file to start the application.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+<h3>System Features</h3>
+This demonstration project includes basic features such as:
+<li>Adding, updating, and deleting sales representatives.</li>
+<li>Adding, updating, and deleting departments.</li>
+<li>Querying information about sales representatives and departments.</li>
+<li>Feel free to expand this project and add more features, such as reporting, authentication, etc., based on your class requirements.</li>
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<h3>License</h3>
+No license, free use.
